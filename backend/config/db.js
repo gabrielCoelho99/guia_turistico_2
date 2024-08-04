@@ -7,7 +7,8 @@ const dbConfig = {
   host: process.env.DB_HOST || 'localhost',
   user: process.env.DB_USER || 'root',
   password: process.env.DB_PASS || '1112',
-  database: process.env.DB_NAME || 'tourist_guide'
+  database: process.env.DB_NAME || 'tourist_guide',
+  port: process.env.DB_PORT || '25989'
 };
 
 // Criação da conexão com o MySQL
