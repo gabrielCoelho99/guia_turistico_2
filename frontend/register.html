@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+  <header class="register-header">
+    <div class="register-logo-container">
+      <a href="index.html" class="register-logo">
+        <img src="./assets/images/image-removebg-preview.png" alt="maratour">
+      </a>
+    </div>
+    <h1 class="register-header-title">Cadastro</h1>
+  </header>
+  
+  <main>
+    <form id="registerForm">
+      <label for="username">Usuário:</label>
+      <input type="text" id="username" name="username" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="password">Senha:</label>
+      <input type="password" id="password" name="password" required>
+      <button type="submit">Registrar</button>
+    </form>
+  </main>
+  <script src="js/register.js"></script>
+</body>
+</html>
+

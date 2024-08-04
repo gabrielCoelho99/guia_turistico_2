@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destinos</title>
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+<body class="destinations-page">
+  <header class="header">
+    <a href="index.html" class="logo">
+      <img src="./assets/images/image-removebg-preview.png" alt="maratour">
+    </a>
+
+    <div class="nav-container">
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Pesquisar destinos...">
+        <button id="search-button">Buscar</button>
+      </div>
+    </div> 
+  </header>
+
+  <main>
+   <section id="destinos">
+      <section class="popular" id="destination">
+        <div class="container">
+          <p class="section-subtitle">Maranhão</p>
+          <h2 class="h2 section-title">Pontos Turísticos</h2>
+          <p class="section-text">
+            Conheça alguns pontos turísticos das cidades que são indispensáveis no seu roteiro! Clique nas imagens para ver mais.
+          </p>
+
+          <div id="saoLuis" class="city-section" data-terms="Ilha de São Luís">
+            <h3 class="city-title">Ilha de São Luís</h3>
+            <ul class="popular-list">
+              <li>
+                <div class="popular-card" data-terms="Palácio dos Leões Centro Histórico">
+                  <figure class="card-img">
+                    <img src="./assets/images/slz4.jpg" alt="Palácio dos Leões" loading="lazy" onclick="showAttractions('palacioDosLeoes')">
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h3 card-title">
+                      <a href="#">Palácio dos Leões e Centro Histórico</a>
+                    </h3>
+                    <p class="card-text">História e cultura maranhense em um edifício colonial com vistas para a Baía de São Marcos.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="popular-card" data-terms="Fronhas Maranhenses Raposa">
+                  <figure class="card-img">
+                    <img src="./assets/images/img5.jpg" alt="Fronhas de Raposa" loading="lazy" onclick="showAttractions('fronhasRaposa')">
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h3 card-title">
+                      <a href="#">Fronhas Maranhenses de Raposa</a>
+                    </h3>
+                    <p class="card-text">As Fronhas Maranhenses são um conjunto de pequenas dunas e lagoas na cidade de Raposa, próxima a São Luís.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="popular-card" data-terms="Festas Juninas Bumba Meu Boi">
+                  <figure class="card-img">
+                    <img src="./assets/images/junina.jpeg" alt="Festas Juninas" loading="lazy" onclick="showAttractions('festasJuninas')">
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h3 card-title">
+                      <a href="#">Festas Juninas</a>
+                    </h3>
+                    <p class="card-text"> São Luís é famosa por suas celebrações juninas, que incluem o Bumba Meu Boi, uma das mais importantes manifestações culturais do estado.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="popular-card" data-terms="Museu Gastronomia">
+                  <figure class="card-img">
+                    <img src="./assets/images/gastronomia.webp" alt="Museu da Gastronomia" loading="lazy" onclick="showAttractions('museuGastronomia')">
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h3 card-title">
+                      <a href="#">Museu da Gastronomia</a>
+                    </h3>
+                    <p class="card-text">Descubra a rica culinária maranhense com exposições interativas de sabores e tradições locais.Uma experiência deliciosa para todos os sentidos!</p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="popular-card" data-terms="Museu Reggae">
+                  <figure class="card-img">
+                    <img src="./assets/images/reggae.jpg" alt="Museu do Reggae" loading="lazy" onclick="showAttractions('museuReggae')">
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h3 card-title">
+                      <a href="#">Museu do Reggae</a>
+                    </h3>
+                    <p class="card-text">Mergulhe na vibrante cultura reggae do Maranhão com exposições que celebram a música, a história e a influência na vida e na identidade dos maranhenses.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="popular-card" data-terms="Paróquia Santuário São José de Ribamar">
+                  <figure class="card-img">
+                    <img src="./assets/images/ribamar.jpeg" alt="Paróquia e Santuário de S. José de Ribamar" loading="lazy" onclick="showAttractions('santuarioRibamar')">
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h3 card-title">
+                      <a href="#">Paróquia e Santuário de S. José de Ribamar</a>
+                    </h3>
+                    <p class="card-text">Local de fé e devoção com belas vistas e arquitetura.</p>
+                  </div>
+                </div>
+              </li>
+ 
+              <li>
+                <div class="popular-card" data-terms="Praia da Guia">
+                  <figure class="card-img">
+                    <img src="./assets/images/guia.jpg" alt="Praia da Guia" loading="lazy" onclick="showAttractions('praiaGuia')">
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h3 card-title">
+                      <a href="#">Praia da Guia</a>
+                    </h3>
+                    <p class="card-text">Praia tranquila, perfeita para relaxar e apreciar a natureza.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="popular-card" data-terms="Praia de São Marcos">
+                  <figure class="card-img">
+                    <img src="./assets/images/marcos.jpg" alt="Praia de S. Marcos" loading="lazy" onclick="showAttractions('praiaMarcos')">
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h3 card-title">
+                      <a href="#">Praia de São Marcos</a>
+                    </h3>
+                    <p class="card-text">Praia urbana com ondas fortes, ideal para surf e lazer.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="popular-card" data-terms="Praia do Araçagy">
+                  <figure class="card-img">
+                    <img src="./assets/images/aracagy.webp" alt="Praia do Araçagy" loading="lazy" onclick="showAttractions('praiaAraçagy')">
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h3 card-title">
+                      <a href="#">Praia do Araçagy</a>
+                    </h3>
+                    <p class="card-text">Praia popular, ótima para banho e atividades ao ar livre.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div id="alcantara" class="city-section" data-terms="Alcântara">
+            <h3 class="city-title">Alcântara</h3>
+            <ul class="popular-list">
+              <li>
+                <div class="popular-card" data-terms="Centro Histórico de Alcântara">
+                  <figure class="card-img">
+                    <img src="./assets/images/alcantara.webp" alt="Centro Histórico de Alcântara" loading="lazy" onclick="showAttractions('centroHistoricoAlcantara')">
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h3 card-title">
+                      <a href="#">Centro Histórico de Alcântara</a>
+                    </h3>
+                    <p class="card-text">Passeie pelas ruas repletas de casas coloniais, igrejas e praças que refletem a riqueza histórica da cidade. Alcântara é um verdadeiro museu a céu aberto, com sua arquitetura preservada e charme antigo.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="popular-card" data-terms="Museu Aeroespacial">
+                  <figure class="card-img">
+                    <img src="./assets/images/aero1.jpg" alt="Museu Aeroespacial" loading="lazy" onclick="showAttractions('museuAeroespacial')">
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h3 card-title">
+                      <a href="#">Museu Aeroespacial</a>
+                    </h3>
+                    <p class="card-text">Um museu que celebra a contribuição de Alcântara para a pesquisa espacial brasileira.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div id="barreirinhas" class="city-section" data-terms="Barreirinhas Santo Amaro">
+            <h3 class="city-title">Barreirinhas e Santo Amaro</h3>
+            <ul class="popular-list">
+              <li>
+                <div class="popular-card" data-terms="Parque Nacional dos Lençóis Maranhenses">
+                  <figure class="card-img">
+                    <img src="./assets/images/lencois.webp" alt="Parque Nacional dos Lençois Maranhenses" loading="lazy" onclick="showAttractions('lencois')">
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h3 card-title">
+                      <a href="#">Parque Nacional dos Lençois Maranhenses</a>
+                    </h3>
+                    <p class="card-text">Descubra um dos cenários mais impressionantes do Brasil, com vastas dunas de areia branca intercaladas por lagoas de águas cristalinas, especialmente em Barreirinhas, Santo Amaro e Primeira Cruz. Ideal para passeios de jipe, caminhadas e banhos refrescantes nas lagoas.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="popular-card" data-terms="Circuito Caburé">
+                  <figure class="card-img">
+                    <img src="./assets/images/cabure.webp" alt="Circuito Caburé" loading="lazy" onclick="showAttractions('circuitoCabure')">
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h3 card-title">
+                      <a href="#">Circuito Caburé</a>
+                    </h3>
+                    <p class="card-text">Um circuito que inclui passeio no Rio Preguiças, ida a Ilha dos Macacos, visita ao Farol e a Praia de Caburé. </p>                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="popular-card" data-terms="Trilha Quadriciclo">
+                  <figure class="card-img">
+                    <img src="./assets/images/passeio.jpg" alt="Trilha de Quadriciclo" loading="lazy" onclick="showAttractions('passeioQuadriciclo')">
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h3 card-title">
+                      <a href="#">Trilha de Quadriciclo</a>
+                    </h3>
+                    <p class="card-text">Passeios de quadriciclo pelas dunas e lagoas dos Lençóis. Siga as instruções do guia e use equipamentos de segurança. Leve uma câmera à prova d'água ou capa protetora.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          
+          <div id="carolina" class="city-section" data-terms="Carolina Riachão">
+            <h3 class="city-title">Carolina e Riachão</h3>
+            <ul class="popular-list">
+              <li>
+                <div class="popular-card" data-terms="Parque Nacional da Chapada das Mesas">
+                  <figure class="card-img">
+                    <img src="./assets/images/mesa.webp" alt="Parque Nacional da Chapada das Mesas" loading="lazy" onclick="showAttractions('chapadaMesa')">
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h3 card-title">
+                      <a href="#">Parque Nacional da Chapada das Mesas</a>
+                    </h3>
+                    <p class="card-text">Um parque com paisagens deslumbrantes, incluindo cânions, cachoeiras e formações rochosas.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="popular-card" data-terms="Complexo Poço Azul">
+                  <figure class="card-img">
+                    <img src="./assets/images/poco.webp" alt="Complexo Poço Azul" loading="lazy" onclick="showAttractions('pocoAzul')">
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h3 card-title">
+                      <a href="#">Complexo Poço Azul</a>
+                    </h3>
+                    <p class="card-text">Um conjunto de cachoeiras e piscinas naturais de águas cristalinas.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="popular-card" data-terms="Complexo Pedra Caída">
+                  <figure class="card-img">
+                    <img src="./assets/images/caida.jpg" alt="Complexo de Pedra Caída" loading="lazy" onclick="showAttractions('pedraCaida')">
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h3 card-title">
+                      <a href="#">Complexo de Pedra Caída</a>
+                    </h3>
+                    <p class="card-text">Um parque turístico com trilhas, cachoeiras e atividades de aventura como tirolesa e rapel.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div id="tutoia" class="city-section" data-terms="Tutoia">
+            <h3 class="city-title">Tutoia</h3>
+            <ul class="popular-list">
+              <li>
+                <div class="popular-card" data-terms="Delta das Américas">
+                  <figure class="card-img">
+                    <img src="./assets/images/delta1.jpg" alt="Delta das Américas" loading="lazy" onclick="showAttractions('deltaAmericas')">
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h3 card-title">
+                      <a href="#">Delta das Américas</a>
+                    </h3>
+                    <p class="card-text">Um vasto delta com canais, ilhas e uma rica biodiversidade. Faça um passeio de barco para explorar as ilhas e observar a fauna local.</p> 
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="popular-card" data-terms="Praia Tutoia Lagoas">
+                  <figure class="card-img">
+                    <img src="./assets/images/tutoia.jpg" alt="Praias de Tutoia e Lagoas" loading="lazy" onclick="showAttractions('praiaTutoia')">
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h3 card-title">
+                      <a href="#">Praias de Tutoia e Lagoas</a>
+                    </h3>
+                    <p class="card-text">Praias tranquilas e lagoas de águas claras, ideais para relaxar e nadar.</p>
+                  </div>
+              </li>
+
+              <li>
+                <div class="popular-card" data-terms="Revoada dos Guarás">
+                  <figure class="card-img">
+                    <img src="./assets/images/revoada.jpg" alt="Revoada dos Guarás" loading="lazy" onclick="showAttractions('revoadaGuaras')">
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h3 card-title">
+                      <a href="#">Revoada dos Guarás</a>
+                    </h3>
+                    <p class="card-text">Um espetáculo natural onde bandos de guarás, aves de plumagem vermelha, sobrevoam o delta ao entardecer. Leve uma câmera para capturar o momento e binóculos para ver as aves. O melhor horário para ver a revoada é no final da tarde.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div id="barraCorda" class="city-section" data-terms="Barra do Corda">
+            <h3 class="city-title">Barra do Corda</h3>
+            <ul class="popular-list">
+              <li>
+                <div class="popular-card" data-terms="Circuito das Cachoeiras">
+                  <figure class="card-img">
+                    <img src="./assets/images/barra1.jpg" alt="Circuito das Cachoeiras" loading="lazy" onclick="showAttractions('barraCorda')">
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h3 card-title">
+                      <a href="#">Circuito das Cachoeiras</a>
+                    </h3>
+                    <p class="card-text">Um circuito que inclui visita à Cachoeira Grande, Cachoeira da Fumaça e Cachoeira da Pedra, cada uma com sua beleza única.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="popular-card" data-terms="Balneário Guajajará">
+                  <figure class="card-img">
+                    <img src="./assets/images/balneario2.jpg" alt="Balneário Guajajará" loading="lazy" onclick="showAttractions('balneario')">
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h3 card-title">
+                      <a href="#">Balneário Guajajará</a>
+                    </h3>
+                    <p class="card-text">O Balneário Guajajara é um dos locais mais frequentados de Barra do Corda devido ao encontro das águas claras e escuras dos rios Mearim e Corda que formam um espetáculo da natureza. Os visitantes podem realizar um passeio de barco ou descer o rio em uma corda, além disso, é possível fazer uma visita aos territórios: Mainumy e Cachoeira Grande, ambos do povo Tenetehara/ Guajajara.</p>
+                  </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/image-removebg-preview.png" alt="maratour logo">
+          </a>
+
+          <p class="footer-text">
+            O site perfeito para você conhecer as belezas do Maranhão com dicas e informações únicas!
+          </p>
+
+        </div>
+
+        <div class="footer-contact">
+
+          <h4 class="contact-title">Contate-nos</h4>
+
+          <p class="contact-text">
+            Sinta-se à vontade para entrar em contato conosco
+          </p>
+
+          <ul>
+
+            <li class="contact-item">
+              <ion-icon name="call-outline"></ion-icon>
+              <a href="https://bio.site/maratourma" target="_blank" class="contact-link">Contatos</a>
+            </li>
+            
+
+            <li class="contact-item">
+              <ion-icon name="mail-outline"></ion-icon>
+
+              <a href="mailto:info.tourly.com" class="contact-link">info.maratour@email.com</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="location-outline"></ion-icon>
+
+              <address>São Luís, MA</address>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-form">
+
+          <p class="form-text">
+            Se inscreva para novidades em primeira mão!
+          </p>
+
+          <form action="" class="form-wrapper">
+            <input type="email" name="email" class="input-field" placeholder="Digite seu e-mail" required>
+
+            <button type="submit" class="btn btn-secondary">Quero receber novidades</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 <a href=""> MARATOUR </a>. Todos os direitos reservados.
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="#" class="footer-bottom-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">Term & Condition</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">FAQ</a>
+          </li>
+
+        </ul>
+    </div>
+
+  </footer>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="./js/destinations.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MaraTour</title>
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top" class="index-page">
+  
+  <!--#HEADER-->
+
+  <header class="header" data-header>
+    <div class="logo-container">
+      <a href="#" class="logo">
+        <img src="./assets/images/image-removebg-preview.png" alt="maratour">
+      </a>
+    </div> 
+
+    <!--BOTAO-->
+
+    <div class="header-btn-group right-align">
+      <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+    </div>
+<!--BOTAO NAV-->
+
+    <nav class="navbar active" data-navbar>
+<!--LOGO NAVBAR-->
+    <div class="navbar-top">
+
+      <a href="#" class="logo">
+      <img src="./assets/images/image-removebg-preview.png" alt="maratour logo">
+      </a>
+
+      <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+      <ion-icon name="close-outline"></ion-icon>
+      </button>
+    </div>
+<!--LOGO NAV-->
+
+      <div class="nav-container">
+        <ul class="navbar-list">
+          <li><a href="#home" class="navbar-link" data-nav-link>Home</a></li>
+          <li><a href="#destination" class="navbar-link" data-nav-link>Destino</a></li>
+          <li><a href="#gallery" class="navbar-link" data-nav-link>Galeria</a></li>
+          <li><a href="#map-title" class="navbar-link" data-nav-link>Mapa</a></li>
+          <li><a href="#contact" class="navbar-link" data-nav-link>Contate-nos</a></li>
+          <li><a href="login.html" class="navbar-link" data-nav-link>Login</a></li>
+          <li><a href="register.html" class="navbar-link" data-nav-link>Cadastro</a></li>
+        </ul>
+
+        <div class="search-container">
+          <input type="text" id="search-input" placeholder="Pesquisar destinos...">
+          <button id="search-button">Buscar</button>
+        </div>
+      </div>
+    </nav>
+  
+    <div class="overlay" data-overlay></div>
+  </header>
+  
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <div class="container">
+
+          <h2 class="h1 hero-title"> venha explorar o Maranhão!</h2>
+
+          <p class="hero-text">
+             Explore a riqueza histórica, a beleza natural e a vibrante cultura de São Luís e outras cidades maranhenses. 
+            Planeje sua viagem com nossos roteiros exclusivos e descubra os tesouros escondidos do nosso estado.
+          </p>
+
+          <div class="btn-group">
+            <a href="#destination" class="btn btn-primary">Saber mais</a>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #POPULAR
+      -->
+
+      <section class="popular" id="destination">
+        <div class="container">
+
+          <p class="section-subtitle">Pontos Turísticos do Maranhão</p>
+
+          <h2 class="h2 section-title">Destinos Populares</h2>
+
+          <p class="section-text">
+            Descubra o Maranhão, um estado repleto de história, cultura e belezas naturais. Visite São Luís, com seu centro histórico e vibrantes festas juninas, e explore as Fronhas Maranhenses em Raposa. Em Alcântara, viaje no tempo entre ruínas coloniais. Barreirinhas encanta com os Lençóis Maranhenses, enquanto Carolina e Riachão revelam cachoeiras e trilhas na Chapada das Mesas. Tutóia e Barra do Corda completam a experiência com deltas, praias e cachoeiras espetaculares.
+          </p>
+
+          <ul class="popular-list">
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="./assets/images/slz4.jpg" alt="Maranhao" loading="lazy">
+                </figure>
+                
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="destinations.html">Maranhão</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="destinations.html">ILHA DE SÃO LUÍS</a>
+                  </h3>
+
+                  <p class="card-text">
+                    A Ilha de São Luís, é um lugar rico em história e cultura, conhecida por seu centro histórico na capital, com casarões coloniais e ruas de paralelepípedos. E outros pontos turísticos nas cidades de Raposa, São José de Ribamar e Paço do Lumiar.
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="./assets/images/alcantara.webp" alt="Maranhao" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="destinations.html">Maranhão</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="destinations.html">Alcântara</a>
+                  </h3>
+
+                  <p class="card-text">
+                    A cidade histórica de Alcântara é conhecida por suas ruínas coloniais e belos cenários naturais. Localizada a poucos quilômetros de São Luís, é um destino ideal para uma viagem de um dia.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+            
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="./assets/images/lencois.webp" alt="Maranhao" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="destinations.html">Maranhão</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="destinations.html">Barreirinhas</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Conhecida como a porta de entrada para os Lençóis Maranhenses, Barreirinhas é uma pequena cidade charmosa que oferece várias opções de ecoturismo.
+                  </p>
+
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <a href="destinations.html">
+            <button class="btn btn-primary">Mais destinos</button>
+          </a>
+          
+        </div>
+      </section>
+
+      <!-- 
+        - #GALLERY
+      -->
+
+      <section class="gallery" id="gallery">
+        <div class="container">
+
+          <p class="section-subtitle">Galeria de fotos</p>
+
+          <h2 class="h2 section-title">Fotos de viajantes</h2>
+
+          <p class="section-text">
+            Veja as incríveis fotos compartilhadas pelos nossos viajantes, capturando a beleza e a diversidade dos destinos turísticos do Maranhão.
+          </p>
+
+          <ul class="gallery-list">
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/img1.jpeg" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/img2.jpg" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/img3.jpg" alt="Gallery image">
+              </figure>
+
+            </li><li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/img4.jpg" alt="Gallery image">
+              </figure>
+
+            </li><li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/img5.jpg" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/img6.jpg" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/img7.jpg" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/img8.jpg" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/img9.jpg" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/img10.jpg" alt="Gallery image">
+              </figure>
+
+            </li> <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/raposa.jpg" alt="Gallery image">
+              </figure>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- #TÍTULO DO MAPA -->
+      <section id="map-title" class="map-title-section">
+        <div class="container">
+          <p class="section-subtitle">Mapa</p>
+          <h2 class="h2 section-title">Explore nossos destinos</h2>
+        </div>
+      </section>
+
+      <!-- #MAPA INTERATIVO -->
+      <section class="map-section">
+       <div class="container">
+        <div id="map" class="map-container"></div>
+       </div>
+      </section>
+
+      <!--- #CTA-->
+      <section class="cta" id="contact">
+        <div class="container">
+          <div class="cta-content">
+            <h2 class="h2 section-title cta-title">Pronto para Explorar?</h2>
+            <p class="section-text">
+              Planeje sua próxima viagem ao Maranhão com a gente e viva uma experiência inesquecível.
+            </p>
+          </div>
+          <a href="https://bio.site/maratourma" class="btn btn-secondary" target="_blank">Começar Agora!</a>
+        </div>
+      </section>
+      
+    </article>
+  </main>
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/image-removebg-preview.png" alt="maratour logo">
+          </a>
+
+          <p class="footer-text">
+            O site perfeito para você conhecer as belezas do Maranhão com dicas e informações únicas!
+          </p>
+
+        </div>
+
+        <div class="footer-contact">
+
+          <h4 class="contact-title">Contate-nos</h4>
+
+          <p class="contact-text">
+            Sinta-se à vontade para entrar em contato conosco
+          </p>
+
+          <ul>
+
+            <li class="contact-item">
+              <ion-icon name="call-outline"></ion-icon>
+              <a href="https://bio.site/maratourma" target="_blank" class="contact-link">Contatos</a>
+            </li>
+            
+
+            <li class="contact-item">
+              <ion-icon name="mail-outline"></ion-icon>
+
+              <a href="mailto:info.tourly.com" class="contact-link">info.maratour@email.com</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="location-outline"></ion-icon>
+
+              <address>São Luís, MA</address>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-form">
+
+          <p class="form-text">
+            Se inscreva para novidades em primeira mão!
+          </p>
+
+          <form action="" class="form-wrapper">
+            <input type="email" name="email" class="input-field" placeholder="Digite seu e-mail" required>
+
+            <button type="submit" class="btn btn-secondary">Quero receber novidades</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 <a href=""> MARATOUR </a>. Todos os direitos reservados.
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="#" class="footer-bottom-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">Term & Condition</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">FAQ</a>
+          </li>
+
+        </ul>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+
+
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <!-- custom js link-->
+  <script src="./assets/js/script.js"></script>
+  <script src="js/app.js"></script>
+
+  <!-- ionicon link-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+</body>
+</html>
